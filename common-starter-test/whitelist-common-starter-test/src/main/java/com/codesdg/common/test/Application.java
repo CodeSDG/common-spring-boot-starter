@@ -2,7 +2,11 @@ package com.codesdg.common.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
+import top.codesdg.common.whitelist.annotation.EnableWhiteList;
+
+import java.lang.annotation.Documented;
 
 /**
  * @author shandeguo
@@ -11,8 +15,9 @@ import org.springframework.context.annotation.ComponentScan;
  * @description
  * @Copyright
  */
+
+@EnableWhiteList
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.codesdg.common.test", "top.codesdg.common.whitelist"})
 public class Application {
 
     public static void main(String[] args) {
