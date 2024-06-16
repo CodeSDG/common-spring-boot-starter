@@ -1,0 +1,11 @@
+server:
+  port: 8090
+
+codesdg:
+  whitelist:
+    enabled: true
+    users:
+      - admin
+      - lisi
+      - zhangsan
+      - wangwu
